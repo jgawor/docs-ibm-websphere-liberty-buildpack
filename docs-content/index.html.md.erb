@@ -3,11 +3,13 @@ title: IBM WebSphere Liberty for PCF (Beta)
 owner: Partners
 ---
 
-IBM WebSphere Liberty for PCF is a buildpack that provides a complete runtime environment for running Java EE and OSGi applications on top of [IBM WebSphere Liberty][]. [IBM WebSphere Liberty][] is a highly composable, fast to start, dynamic application server runtime environment.
+IBM WebSphere Liberty for PCF is a buildpack that provides a complete runtime environment for running Java EE and OSGi applications on top of [IBM WebSphere Liberty][]. Liberty is a highly composable, fast to start, dynamic application server runtime environment.
 
 ## <a id='overview'></a>Overview
 
-IBM WebSphere Liberty for PCF installs the `ibm_websphere_liberty_buildpack` buildpack into PCF. Developers can then deploy their Java EE applications using the buildpack. The buildpack handles deployment of various application types such as Web applications (`.war`), Enterprise applications (`.ear`), [Liberty packaged servers](https://www.ibm.com/support/knowledgecenter/en/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_setup_package_server.html), or [Liberty server directories](https://www.ibm.com/support/knowledgecenter/en/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_setup_new_server.html). See [IBM WebSphere Liberty Buildpack](https://github.com/cloudfoundry/ibm-websphere-liberty-buildpack/blob/master/README.md) for more information.
+IBM WebSphere Liberty for PCF installs the `ibm_websphere_liberty_buildpack` buildpack into PCF. Developers can then deploy their Java EE applications using the buildpack. The buildpack downloads and install the Liberty runtime along with the IBM JRE. The buildpack can handle different application types such as Web applications (`.war`), Enterprise applications (`.ear`), [Liberty packaged servers](https://www.ibm.com/support/knowledgecenter/en/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_setup_package_server.html), or [Liberty server directories](https://www.ibm.com/support/knowledgecenter/en/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/twlp_setup_new_server.html).
+
+See [IBM WebSphere Liberty Buildpack](https://github.com/cloudfoundry/ibm-websphere-liberty-buildpack/blob/master/README.md) for more information.
 
 ## <a id='features'></a>Key Features
 
@@ -18,7 +20,7 @@ IBM WebSphere Liberty for PCF includes the following key features:
   * Java EE archives (`.war`, `.ear`)
   * Liberty archives that can include configuration data along with applications
   * Standalone applications (`.jar`), etc.
-* Runs on IBM JRE and supports OpenJDK
+* Runs on IBM SDK and supports OpenJDK
 
 ## <a id="snapshot"></a>Product Snapshot
 
@@ -65,9 +67,9 @@ or open [an issue on IBM WebSphere Liberty Buildpack](https://github.com/cloudfo
 
 ## <a id='license'></a>License
 
- * [IBM WebSphere Liberty Buildpack License][Buildpack-License]
- * [IBM WebSphere Liberty License][Liberty-License]
- * [IBM SDK License][JVM-License]
+ * [IBM WebSphere Liberty Buildpack][Buildpack-License]
+ * [IBM WebSphere Liberty][Liberty-License]
+ * [IBM SDK][JVM-License]
 
 [IBM WebSphere Liberty]: https://www.ibm.com/support/knowledgecenter/en/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html
 [Liberty-License]: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/18.0.0.3/lafiles/runtime/en.html
